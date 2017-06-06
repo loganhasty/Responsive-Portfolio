@@ -5,6 +5,9 @@ body {
     line-height:30px;
 }
 
+.navbar {
+    z-index:1000;
+}
 .navbar .nav-buttons{
     list-style-type: none;
     margin: 0%;
@@ -16,12 +19,12 @@ body {
     border-color:#cccccc;
     position:relative;
     width:100%;
+
 }
 
 .nav-links {
     float: right;
     list-style-type:none;
-
 }
 
 li a {
@@ -53,7 +56,7 @@ li a:hover {
     height:36px;
     font-weight:bold;
     font-size:24px;
-    z-index:100;
+    z-index:10000;
 }
 
 .left-section, .portfolio-section {
@@ -158,67 +161,32 @@ input[type=button], input[type=submit], input[type=reset] {
     height:40px;
 }
 
-#social img, #snake img, #tictactoe img, #calculator img {
-    width:240px;
-    float:left;
-    max-height:140px;
-    margin-left:10px;
-    padding:20px;
-    display:inline-block;
+.sneak-peek {
+    width:200px;
+    height:200px;
+}
+
+.credential {
     position:relative;
+    width:200px;
+    float:left;
+    margin:30px;
+    border:2px solid #4aaaa5;
 }
 
-#social div {
+.banner {
     position:absolute;
-    width:235px;
-    height:20px;
+    bottom:30px;
     background-color:#4aaaa5;
     color:white;
-    padding:10px 0px;
-    margin:140px 0 0 33px;
-    z-index:5;
     text-align:center;
-    font-size:14px;
+    height:50px;
+    width:180px;
+    padding:10px;
+    font-size:18px;
+
 }
 
-#snake div {
-    position:absolute;
-    width:240px;
-    height:20px;
-    background-color:#4aaaa5;
-    color:white;
-    padding:10px 0px;
-    margin:140px 0 0 320px;
-    z-index:5;
-    text-align:center;
-    font-size:14px;
-}
-
-#tictactoe div {
-    position:absolute;
-    width:235px;
-    height:20px;
-    background-color:#4aaaa5;
-    color:white;
-    padding:10px 0px;
-    margin:300px 0 0 33px;
-    z-index:5;
-    text-align:center;
-    font-size:14px;
-}
-
-#calculator div {
-    position:absolute;
-    width:240px;
-    height:20px;
-    background-color:#4aaaa5;
-    color:white;
-    padding:10px 0px;
-    margin:300px 0 0 320px;
-    z-index:5;
-    text-align:center;
-    font-size:14px;
-}
 
 @media only screen and (max-width:980px){
     .logo {
@@ -280,44 +248,63 @@ input[type=button], input[type=submit], input[type=reset] {
         overflow:hidden;
     }
 
-    .portfolio-section #social img, .portfolio-section #snake img, 
-    .portfolio-section #tictactoe img, .portfolio-section #calculator img {
-        width:200%;
+    
+}
 
-    }
-
-
-    #social, #snake, #tictactoe, #calculator{
-        width:25%;
-        float:left;
+@media only screen and (max-width: 640px) {
+    .logo {
+        width:100%;
+        height:4%;
+        margin-left:0px;
         display:block;
-        padding-right:25%;
-        position:relative;
+        z-index:100;
+        position:static;
+        position:absolute;
+    }
+    
+    .navbar .nav-buttons .nav-links{
+        float:right;
+        display:inline;
+        width:33.33%;
+        padding-left:0;
+        margin-left:0;
+
     }
 
-    #snake div {
+    .navbar {
+        
+        position:static;
+        margin-top:10%;
+    }
+    
+    .left-section, .portfolio-section {
         float:left;
-        position:absolute;
-        margin-left:12%;
-        width:101%;
+        margin:10% 10% 15% 5%;
+        padding:0% 2%;
+        width:86%;
+        height:auto;
+        overflow:auto;
+
+    }
+    .connect  {
+        float:left;
+        margin:-10% 5% 20% 5%;
+        width:90%;
+        text-align:center;
+    }
+    
+    .social img {
+    float:left;
+    display:inline;
+    width:10%;
+    padding:5%;
+    margin-left:10%;
     }
 
-    #tictactoe div {
-        float:left;
-        position:absolute;
-        margin-top:50%;
-        width:98%;
-    }
-
-    #calculator div {
-        float:left;
-        position:absolute;
-        margin-left:20%;
-    }
 
 }
 
-@media only screen and (max-width:768px) {    
+@media only screen and (max-width:768px) and (min-width:641px) {    
     .logo {
         position:fixed;
         top:0;
@@ -328,6 +315,7 @@ input[type=button], input[type=submit], input[type=reset] {
         top:0;
         right:0;
         width:100%;
+
     }
     
     .left-section {
@@ -354,60 +342,9 @@ input[type=button], input[type=submit], input[type=reset] {
         margin-left:10%;
 }
 
-    .name-email {
-        width:30%;
-    }
+   
 }
 
-@media only screen and (max-width: 640px) {
-    .logo {
-        width:100%;
-        height:4%;
-        margin-left:0px;
-        display:block;
-        z-index:100;
-        position:static;
-        position:absolute;
-    }
-    
-    .navbar .nav-buttons .nav-links{
-        float:right;
-        display:inline;
-        width:33.33%;
-        padding-left:0;
-        margin-left:0;
-    }
-
-    .navbar {
-        position:static;
-        position:absolute;
-        margin-top:10%;
-    }
-    
-    .left-section {
-        float:left;
-        margin:25% 5% 15% 5%;
-        padding:0% 2%;
-        width:86%;
-        height:auto;
-        overflow:auto;
-
-    }
-    .connect  {
-        float:left;
-        margin:-10% 5% 15% 5%;
-        width:90%;
-        text-align:center;
-    }
-    
-    .social img {
-    float:left;
-    display:inline;
-    width:10%;
-    padding:5%;
-    margin-left:10%;
-}
-}
 
 
 
