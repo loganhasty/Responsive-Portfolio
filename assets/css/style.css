@@ -176,7 +176,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .banner {
     position:absolute;
-    bottom:30px;
+    bottom:0px;
     background-color:#4aaaa5;
     color:white;
     text-align:center;
