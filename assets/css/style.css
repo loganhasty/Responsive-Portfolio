@@ -201,9 +201,9 @@ input[type=button], input[type=submit], input[type=reset] {
         width:100%;
     }
 
-    .left-section {
+    .left-section, .portfolio-section {
         float:left;
-        margin:15% 5% 5% 5%;
+        margin:15% 5% 10% 5%;
         padding:0% 2%;
         width:55%;
         height:auto;
@@ -240,13 +240,6 @@ input[type=button], input[type=submit], input[type=reset] {
         text-indent:3px;
 
 }
-
-    .portfolio-section {
-        width:90%;
-        margin-top:25%;
-        padding-left:0%;
-        overflow:hidden;
-    }
 
     
 }
@@ -318,7 +311,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
     }
     
-    .left-section {
+    .left-section, .portfolio-section {
         float:left;
         margin:15% 5% 15% 5%;
         padding:0% 2%;
@@ -342,7 +335,7 @@ input[type=button], input[type=submit], input[type=reset] {
         margin-left:10%;
 }
 
-   
+
 }
 
 
